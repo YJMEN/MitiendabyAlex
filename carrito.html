@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="./css/carro.css">
+</head>
+<body>
+    <!--AQUÍ AGREGAMOS EL BOTON DE WHATSAPP -->
+<a href="https://wa.me/1234567890" class="whatsapp_float" target="_blank">
+    <img src="./Imagenes/whatsapp.png" alt="WhatsApp" />
+</a>
+<header class="header"> <!--CONTENEDOR PADRE 1-->
+    <div class="logo"> <!--DIV 1-->
+        <video class="video" src="./Imagenes/Logo.mp4" type="video/mp4" width="15%" height="15%" loop muted autoplay></video><br>
+    </a>
+    </div>
+    <div class="logo1"><!--DIV 2-->
+        
+        <h1 class="nombre">VENUS STORE</h1>
+        <div><h3>Sacos e Infantil</h3></div>
+    </div>
+    <nav class="nav"><!--DIV 3-->
+        <ul class="menu">
+            <li><a href="index.html"><img class="iconos" src="Imagenes/inicio.png"></a></li>
+            <li><a href="#">Secciones<img src="Imagenes/caret-abajo.png" width="10px" height="10px"></a>
+                <ul class="submenu">
+                    <li><a href="./Hombres.html">Hombre</a></li>
+                    <li><a href="./Mujeres.html">Mujer</a></li>
+                    <li><a href="./UPS.html">Infantil</a></li><!--..//Mi tienda Online/infantil.html-->
+                </ul>
+            </li>
+            <li><a href="./carrito.html"><img class="iconos" src="./Imagenes/carrito.png"></a></li>
+        </ul>
+    </nav>
+</header><!--AQUÍ ACABA EL HEADER-->
+<!-- --------------------------------------------------------------------------------------------------------------- -->    
+<div class="carrito"><!-- Contenedor Padre 1 -->
+    <img class="happi" src="./Imagenes/happi.png" alt="">
+</div>
+<!-- --------------------------------------------------------------------------------------------------------------- -->    
+<div class="caja"><!-- Contenedor Padre 2 -->
+    <div class="contenido"> <!-- Contenedor Hijo 1 -->
+        <div id="carrito"><!-- Sección de productos los cuales aparecerán según el JS -->
+            <ul id="lista-carrito">
+                <div class="cart-items"></div>
+            </ul>
+            <!-- Botón para vaciar carrito -->
+            <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
+        </div>
+    </div>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+<!-- Sección de resumen del pedido -->
+    <div id="total-precio" class="total"><!-- Contenedor Hijo 2 -->
+        <span class="total-label">Total</span>
+        <span class="total-amount">$0.00</span><br>
+        <div class="iva">Impuesto incluído.</div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+<!-- Sección de datos del cliente (nombre, Dir, Tel, etc...) -->
+<div class="datillos"><!--contenedor padresub-->
+    <div class="info"><h3>INFORMACIÓN DE ENVÍO</h3></div>
+    
+<form class="form"><!--contenedor principal-->
+    <div class="form1"><!--contenedorcito1-->
+        <label for="name">Nombres:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="phone">Celular:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="address">Departamento:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="address">Ciudad:</label>
+        <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="form1"><!--contenedorcito2-->
+        <label for="address">Localidad:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="address">Dirección:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="address1" >Complemento de la dirección:</label>
+        <input type="text" id="address" placeholder="Casa, Dpto, Piso, Torre, etc..." name="address" required>
+
+        <label for="email">Correo:</label>
+        <input type="text" id="address" placeholder="Opcional" name="address" >
+    </div>
+
+    </form>
+    <button class="checkout-btn">Proceder al pago</button>
+</div>
+</div>
+</body>
+<script src="js/agregar_al_carro.js"></script>
+<script src="js/carrito.js"></script>
+
+</html>

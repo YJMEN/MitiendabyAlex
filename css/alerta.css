@@ -1,0 +1,26 @@
+.alerta {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(255, 81, 0); /* Rojo */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    z-index: 1000;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease-in-out;
+    transform: translateY(-2px);
+    filter: drop-shadow(2px 1px 10px rgb(255, 255, 255));
+}
+
+.alerta.mostrar {
+    opacity: 1; /* Visible */
+}
+
+.alerta.ocultar {
+    opacity: 0;
+    pointer-events: none;
+}
